@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사</title>
+</head>
+<body>
+    <h3>설문조사</h3>
+    <form>
+        <fieldset>
+            <legend>성별과 나이를 입력하시오</legend>
+            <input type="radio" name="gender" value="male">남자
+            <input type="radio" name="gender" value="female">여자<br>
+           나이: <input type="number" name="age">
+        </fieldset>
+        <fieldset>
+            <legend>관심 분야를 선택하세요(1개 이상)</legend>
+            <input type="checkbox" name="디지털">디지털 콘텐츠
+            <input type="checkbox" name="web">웹프로그래밍
+            <input type="checkbox" name="data">데이터베이스
+            <input type="checkbox" name="elect">전자출판
+        </fieldset>
+        <fieldset>
+            <legend>다음 문항에 대해 5점 척도로 답하세요.</legend>
+            본 세미나의 주제는 만족스러운가? 1<input type="range" min="1" max="5" value="3" />5 <br>
+            본 세미나의 초창 강사는 만족스러운가? 1<input type="range" min="1" max="5" value="3" />5 <br>
+            본 세미나의 강의 시간은 적당한가? 1<input type="range" min="1" max="5" value="3" />5 
+        </fieldset>
+        <p>기타의견사항<br>
+            <textarea name="기타 의견사항" cols="40" rows="5">의견은 적으시오</textarea><br>
+            <input type="submit" value="확인">
+            <input type="reset" value="취소">
+    </form>
+</body>
+</html>
